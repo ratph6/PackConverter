@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # MC Texture Pack Converter
 
 Converts Minecraft Java resource packs from **1.7 / 1.8.9** to **1.21.10** (`pack_format 69`).
-
-![GUI screenshot placeholder](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
 
 ## Features
 
@@ -30,26 +27,14 @@ Grab the latest build from the [Releases](../../releases) page — just download
 - On Linux: `libgl1-mesa-dev xorg-dev` (or equivalent for your distro)
 
 ```bash
-git clone https://github.com/youruser/mc-texture-pack-converter.git
-cd mc-texture-pack-converter
-go build -o mc-pack-converter .
+git clone https://github.com/ratph6/PackConverter.git
+cd PackConverter
+go build -o PackConverter .
 ```
 
 On Windows:
 ```bash
-go build -o mc-pack-converter.exe .
-```
-
-### Linux dependencies (Debian/Ubuntu)
-
-```bash
-sudo apt install gcc libgl1-mesa-dev xorg-dev
-```
-
-### Linux dependencies (Fedora)
-
-```bash
-sudo dnf install gcc mesa-libGL-devel libXcursor-devel libXrandr-devel libXinerama-devel libXi-devel libXxf86vm-devel
+go build -o PackConverter.exe .
 ```
 
 ## Usage
@@ -58,29 +43,3 @@ sudo dnf install gcc mesa-libGL-devel libXcursor-devel libXrandr-devel libXinera
 2. Click **Browse** to pick your input `.zip` pack
 3. Output path auto-generates as `<packname>_1.21.zip` — click **Change** to override
 4. Click **Convert**
-
-The converter reads all files upfront, processes them in parallel across all CPU cores, and streams the output zip directly to disk. Pre-compressed files (PNG, OGG, etc.) are stored without re-compression.
-
-## Project structure
-
-```
-├── main.go                  Entry point
-├── gui/
-│   └── gui.go               Fyne GUI with native file dialogs
-└── converter/
-    ├── converter.go          Core pipeline (read → parallel process → write)
-    ├── atlas.go              Atlas splitting (paintings, widgets, icons, chests)
-    ├── textures.go           File path remapping
-    ├── models.go             Model/blockstate JSON conversion
-    ├── mappings.go           All rename tables and atlas region definitions
-    ├── packmeta.go           pack.mcmeta conversion
-    ├── sounds.go             sounds.json event remapping
-    └── lang.go               .lang → .json conversion
-```
-
-## License
-
-MIT
-=======
-# PackConverter
->>>>>>> 247f3cbb019c608cd2d6cde29adde3a75bdf2fe4
