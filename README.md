@@ -15,6 +15,11 @@ Converts Minecraft Java resource packs from **1.7 / 1.8.9** to **1.21.10** (`pac
 - Duplicates enchant glint texture for item + entity variants
 - Fixes crosshair transparency for packs that used XOR blending
 
+## Issues i dont want to fix for now
+
+- it auto tabs u out of the gui when u select an input pack
+- if a pack description is too long it just wont load (just remove the pack description in the metadata file)
+
 ## Install
 
 Grab the latest build from the [Releases](../../releases) page — just download and run, no install needed.
