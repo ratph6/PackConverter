@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MC Texture Pack Converter
 
 Converts Minecraft Java resource packs from **1.7 / 1.8.9** to **1.21.10** (`pack_format 69`).
@@ -80,3 +81,6 @@ The converter reads all files upfront, processes them in parallel across all CPU
 ## License
 
 MIT
+=======
+# PackConverter
+>>>>>>> 247f3cbb019c608cd2d6cde29adde3a75bdf2fe4
